@@ -21,55 +21,195 @@ my Linux configuration
  key bindings (click to expand)
 </summary>
 
- ##### Basics
+##### Basics
+<table>
+<thead>
+<tr>
+<th>Key Binding</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
 
- Key Binding              |              Function
-                      --- | ---
- Super + p                |    spawn dmenu
- Super + Return           |    spawn <strong>mate-terminal</strong>
- Super + Shift + e        |    quit dwm
- Super + Shift + q        |    kill active window
- Super + 0                |    view all tags
- Super + [1-9]            |    go to selected tag
- Super + Tab              |    jump to previous tag
+<tr>
+<td>Super + p</td>
+<td>spawn dmenu</td>
+</tr>
 
- ##### Master Window
+<tr>
+<td>Super + Return</td>
+<td>spawn <strong>mate-terminal</strong></td>
+</tr>
 
- Key Binding              |              Function
-                      --- | ---
- Super + i                |    increase the number of master windows
- Super + d                |    decrease the number of master windows
- Super + l                |    increase the size of master windows
- Super + h                |    decrease the size of master windows
+<tr>
+<td>Super + Shift + e</td>
+<td>quit dwm</td>
+</tr>
 
- ##### Active Window
+<tr>
+<td>Super + Shift + q</td>
+<td>kill active window</td>
+</tr>
 
- Key Binding              |              Function
-                      --- | ---
- Super + j                |    shift window focus down the stack
- Super + k                |    shift window focus up the stack
- Super + Shift + j        |    move the active window down the stack
- Super + Shift + k        |    move the active window up the stack
- Super + Shift + 0        |    make the active window visible on all tags
- Super + Shift + [1-9]    |    move the active window to the selected tag
- Super + f                |    toggle fullscreen
+<tr>
+<td>Super + 0</td>
+<td>view all tags</td>
+</tr>
 
- ##### Gaps
+<tr>
+<td>Super + [1-9]</td>
+<td>go to selected tag</td>
+</tr>
 
- Key Binding              |              Function
-                      --- | ---
- Super + Shift + l        |    increase gap size
- Super + Shift + h        |    decrease gap size
- Super + g                |    toggle gaps
- Super + Shift + g        |    set gaps to default size
+<tr>
+<td>Super + Tab</td>
+<td>jump to previous tag</td>
+</tr>
 
- ##### Other
+</tbody>
+</table>
 
- Key Binding              |              Function
-                      --- | ---
- Super + b                |    toggle status bar
- Super + Space            |    switch layouts
- Super + Shift + Space    |    float active window
+##### Master Window
+<table>
+<thead>
+<tr>
+<th>Key Binding</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td>Super + i</td>
+<td>increase the number of master windows</td>
+</tr>
+
+<tr>
+<td>Super + d</td>
+<td>decrease the number of master windows</td>
+</tr>
+
+<tr>
+<td>Super + l</td>
+<td>increase the size of master windows</td>
+</tr>
+
+<tr>
+<td>Super + h</td>
+<td>decrease the size of master windows</td>
+</tr>
+
+</tbody>
+</table>
+
+##### Active Window
+<table>
+<thead>
+<tr>
+<th>Key Binding</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td>Super + j</td>
+<td>shift window focus down the stack</td>
+</tr>
+
+<tr>
+<td>Super + k</td>
+<td>shift window focus up the stack</td>
+</tr>
+
+<tr>
+<td>Super + Shift + j</td>
+<td>move the active window down the stack</td>
+</tr>
+
+<tr>
+<td>Super + Shift + k</td>
+<td>move the active window up the stack</td>
+</tr>
+
+<tr>
+<td>Super + Shift + 0</td>
+<td>make the active window visible on all tags</td>
+</tr>
+
+<tr>
+<td>Super + Shift + [1-9]</td>
+<td>move the active window to the selected tag</td>
+</tr>
+
+<tr>
+<td>Super + f</td>
+<td>toggle fullscreen</td>
+</tr>
+
+</tbody>
+</table>
+
+##### Gaps
+<table>
+<thead>
+<tr>
+<th>Key Binding</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td>Super + Shift + l</td>
+<td>increase gap size</td>
+</tr>
+
+<tr>
+<td>Super + Shift + h</td>
+<td>decrease gap size</td>
+</tr>
+
+<tr>
+<td>Super + g</td>
+<td>toggle gaps</td>
+</tr>
+
+<tr>
+<td>Super + Shift + g</td>
+<td>set gaps to default size</td>
+</tr>
+
+</tbody>
+</table>
+
+##### Other
+<table>
+<thead>
+<tr>
+<th>Key Binding</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td>Super + b</td>
+<td>toggle status bar</td>
+</tr>
+
+<tr>
+<td>Super + Space</td>
+<td>switch layouts</td>
+</tr>
+
+<tr>
+<td>Super + Shift + Space</td>
+<td>float active window</td>
+</tr>
+
+</tbody>
+</table>
 
  </details>
 
