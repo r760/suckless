@@ -1,0 +1,57 @@
+#!/bin/bash
+
+doc () {
+    echo ""
+    echo "dot [install] [uninstall]"
+    echo ""
+    echo "use:"
+    echo "./dot install"
+    echo "./dot uninstall"
+    echo ""
+}
+
+if [[ $# == 1 ]]
+then
+    case $1 in
+	"install")
+	    echo "installing dot"
+	    # install dwm
+	    cd dwm
+	    sudo make install
+	    sudo make clean
+
+	    # install slstatus
+	    cd ../slstatus
+	    sudo make install
+	    sudo make clean
+
+	    # install dmenu
+	    cd ../dmenu
+	    sudo make install
+	    sudo make clean
+	    ;;
+	"uninstall")
+	    echo "uninstalling dot"
+	    # uninstall dwm
+	    cd dwm
+	    sudo make uninstall
+	    sudo make clean
+
+	    # uninstall slstatus
+	    cd ../slstatus
+	    sudo make uninstall
+	    sudo make clean
+
+	    # uninstall dmenu
+	    cd ../dmenu
+	    sudo make uninstall
+	    sudo make clean
+
+	    ;;
+	*)
+	    doc
+	    ;;
+    esac
+else
+    doc
+fi
