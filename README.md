@@ -259,5 +259,6 @@ chmod +x dot
 ### uninstallation
 to uninstall everything
 ```
+cd ~/dot
 ./dot uninstall
 ```
