@@ -255,7 +255,13 @@ cd dot
 chmod +x dot
 ./dot install
 ```
-
+to auto start slstatus
+```
+echo "# start slstatus
+killall -q slstatus
+while pgrep -u $UID -x slstatus > /dev/null; do sleep 1; done
+slstatus &" >> ~/.profile
+```
 ### uninstallation
 to uninstall everything
 ```
