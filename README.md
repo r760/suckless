@@ -213,26 +213,16 @@ my Linux configuration
 
  </details>
 
-##### requirements
-<ul>
-	<li>font: fontawesome</li>
-</ul>
-
 <em>optional:</em> redefine the termcmd variable in [config.h](dwm/config.h) to change default <em>(mate-terminal)</em> terminal
 
 ### my build of [slstatus](https://tools.suckless.org/slstatus/)
 
 #### features
-- custom; date, volume, brightness modules
+- custom; date, volume, brightness modules 
+	* these modules are system specific, and as such are not guaranteed to work
+	  on all systems, feel free to edit them [here](slstatus/config.h)
 - vanilla; cpu, battery modules
 - black and orange color scheme
-
-##### requirements
-<ul>
-	<li>font: fontawesome</li>
-	<li>pamixer</li>
-	<li>xrandr</li>
-</ul>
 
 ### my build of [dmenu](https://tools.suckless.org/dmenu/)
 
@@ -240,13 +230,24 @@ my Linux configuration
 - set window position and width via the [xyw](https://tools.suckless.org/dmenu/patches/xyw/) patch
 - black and orange color scheme
 
-##### requirements
+##### dependencies
 <ul>
-	<li>font: hack</li>
+	<li>git</li>
+	<li>xorg</li>
+	<li>libx11-dev</li>
+	<li>libxft-dev</li>
+	<li>libxinerama-dev</li>
+	<li>xdm</li>
+	<li>suckless-tools</li>
+	<li>dmenu</li>
+	<li>fonts-hack-ttf</li>
+	<li>fonts-font-awesome</li>
+	<li>pamixer</li>
+	<li>xrandr</li>
 </ul>
 
 ### installation
-to install everything
+to install everything: first install all dependencies, then run;
 
 ```
 cd ~
@@ -255,15 +256,16 @@ cd dot
 chmod +x dot
 ./dot install
 ```
-to auto start slstatus
+
+to auto start slstatus you can append the following to ~/.profile
 ```
-echo "# start slstatus
+# start slstatus
 killall -q slstatus
 while pgrep -u $UID -x slstatus > /dev/null; do sleep 1; done
-slstatus &" >> ~/.profile
+slstatus &
 ```
 ### uninstallation
-to uninstall everything
+to uninstall everything (except dependencies)
 ```
 cd ~/dot
 ./dot uninstall
