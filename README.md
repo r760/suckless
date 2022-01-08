@@ -11,7 +11,7 @@ my Linux configuration
 
 #### features
 - move windows up and down the stack via the [movestack](https://dwm.suckless.org/patches/movestack/) patch
-- toggle fullscreen mode for windows via the [fullscreen](https://dwm.suckless.org/patches/fullscreen/) patch
+- toggle full-screen mode for windows via the [fullscreen](https://dwm.suckless.org/patches/fullscreen/) patch
 - add inner and outer gaps between windows via the [vanitygaps](https://dwm.suckless.org/patches/vanitygaps/) patch
 - black and orange color scheme
 
@@ -144,7 +144,7 @@ my Linux configuration
 
 <tr>
 <td>Super + f</td>
-<td>toggle fullscreen</td>
+<td>toggle full-screen</td>
 </tr>
 
 </tbody>
@@ -208,6 +208,16 @@ my Linux configuration
 <td>float active window</td>
 </tr>
 
+<tr>
+<td>Super + ,</td>
+<td>shift focus to the next monitor</td>
+</tr>
+
+<tr>
+<td>Super + Shift +  ,</td>
+<td>move the active window to the next monitor</td>
+</tr>
+
 </tbody>
 </table>
 
@@ -218,7 +228,7 @@ my Linux configuration
 ### my build of [slstatus](https://tools.suckless.org/slstatus/)
 
 #### features
-- custom; date, volume, brightness modules 
+- custom; date, volume, brightness (multiple monitors known to cause issues) modules 
 	* these modules are system specific, and as such are not guaranteed to work
 	  on all systems, feel free to edit them [here](slstatus/config.h)
 - vanilla; cpu, battery modules
@@ -244,6 +254,7 @@ my Linux configuration
 	<li>fonts-font-awesome</li>
 	<li>pamixer</li>
 	<li>xrandr</li>
+	<li>mate-terminal</li>
 </ul>
 
 ### installation
