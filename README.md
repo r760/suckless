@@ -1,11 +1,11 @@
-## dot
+## suckless
 
 my Linux configuration
 <em>(produced via combining my builds of suckless' dwm, slstatus, and dmenu)</em>
 
-![Picture 1](screenshots/dot_01.jpg)
+![Picture 1](screenshots/suckless_01.jpg)
 
-![Picture 2](screenshots/dot_02.jpg)
+![Picture 2](screenshots/suckless_02.jpg)
 
 ### my build of [dwm](https://dwm.suckless.org/)
 
@@ -262,10 +262,10 @@ to install everything: first install all dependencies, then run;
 
 ```
 cd ~
-git clone https://github.com/r760/dot
-cd dot
-chmod +x dot
-./dot install
+git clone https://github.com/r760/suckless
+cd suckless
+chmod +x suckless
+./suckless install
 ```
 
 to auto start slstatus you can append the following to ~/.profile
@@ -278,6 +278,6 @@ slstatus &
 ### uninstallation
 to uninstall everything (except dependencies)
 ```
-cd ~/dot
-./dot uninstall
+cd ~/suckless
+./suckless uninstall
 ```
