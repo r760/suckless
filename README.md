@@ -264,8 +264,7 @@ to install everything: first install all dependencies, then run;
 cd ~
 git clone https://github.com/r760/suckless
 cd suckless
-chmod +x suckless
-./suckless install
+make install
 ```
 
 to auto start slstatus you can append the following to ~/.profile
@@ -279,5 +278,5 @@ slstatus &
 to uninstall everything (except dependencies)
 ```
 cd ~/suckless
-./suckless uninstall
+make uninstall
 ```
